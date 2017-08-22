@@ -20,13 +20,13 @@
   "devDependencies": {
     "@types/node": "^7.0.12",
     "concurrently": "^3.5.0",
-    "http-server": "^0.9.0",
+    "light-server": "^2.2.1",
     "typescript": "^2.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node_modules/.bin/tsc --watch",
-    "server": "node_modules/.bin/http-server -p 8080",
+    "server": "node_modules/.bin/light-server -s . -p 8080",
     "start": "concurrently \"npm run server\" \"npm run watch\""
   },
   "author": "",
