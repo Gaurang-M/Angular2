@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {HelloWorldComponent} from './components/helloworld.component';
-import {router, routes, views} from "./app.route";
+import {baseComponent} from './components/base/base.component';
+import {routerModule, views} from "./app.route";
 
 @NgModule({
-	imports: [BrowserModule,routes],
-	declarations: [HelloWorldComponent, views],
-	bootstrap: [HelloWorldComponent]
+	imports: [BrowserModule,routerModule],
+	declarations: [baseComponent, views],
+	bootstrap: [baseComponent]
 })
-export class AppModule{ }
+export class AppModule{}

@@ -1,0 +1,7 @@
+<div class="col-lg-3 col-md-3 col-sm-4">
+  <div class="list-group table-of-contents">
+    <a (click)="selectOption(t)" *ngFor="let t of topics" class="list-group-item">
+        {{t.id}} {{t.name}}
+    </a>
+  </div>
+</div>
