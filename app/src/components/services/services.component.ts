@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 
 @Component({
-	selector: "about",
+	selector: "services",
 	template: `<strong>services !</strong>`
 })
 
